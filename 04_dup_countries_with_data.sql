@@ -1,5 +1,5 @@
 mysql> use dbms_lab;
-Database changed
+Database changed 
 mysql> show tables;
 +--------------------+
 | Tables_in_dbms_lab |
