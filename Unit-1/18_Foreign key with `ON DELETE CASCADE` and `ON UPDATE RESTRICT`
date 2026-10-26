@@ -1,0 +1,12 @@
+CREATE TABLE IF NOT EXISTS employees (
+    employee_id DECIMAL(6,0) NOT NULL PRIMARY KEY,
+    first_name VARCHAR(20),
+    last_name VARCHAR(25),
+    job_id VARCHAR(10),
+    salary DECIMAL(8,2),
+
+    FOREIGN KEY (job_id)
+        REFERENCES jobs(job_id)
+        ON DELETE CASCADE
+        ON UPDATE RESTRICT
+) ENGINE=InnoDB;
