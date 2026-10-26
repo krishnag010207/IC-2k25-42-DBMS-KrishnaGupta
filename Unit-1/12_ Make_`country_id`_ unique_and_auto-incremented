@@ -1,0 +1,5 @@
+CREATE TABLE IF NOT EXISTS countries (
+    country_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    country_name VARCHAR(40),
+    region_id DECIMAL(10,0)
+);
