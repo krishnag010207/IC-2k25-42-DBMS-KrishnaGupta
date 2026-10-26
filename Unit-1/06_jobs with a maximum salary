@@ -1,0 +1,7 @@
+CREATE TABLE IF NOT EXISTS jobs (
+    job_id VARCHAR(10) NOT NULL,
+    job_title VARCHAR(35) NOT NULL,
+    min_salary DECIMAL(6,0),
+    max_salary DECIMAL(6,0),
+    CHECK (max_salary <= 25000)
+);
