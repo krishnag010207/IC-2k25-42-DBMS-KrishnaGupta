@@ -1,0 +1,16 @@
+CREATE TABLE IF NOT EXISTS employees (
+    employee_id DECIMAL(6,0) NOT NULL PRIMARY KEY,
+    first_name VARCHAR(20),
+    last_name VARCHAR(25),
+    email VARCHAR(25),
+    phone_number VARCHAR(20),
+    hire_date DATE,
+    job_id VARCHAR(10),
+    salary DECIMAL(8,2),
+    commission DECIMAL(5,2),
+    manager_id DECIMAL(6,0),
+    department_id DECIMAL(4,0),
+
+    FOREIGN KEY (department_id, manager_id)
+        REFERENCES departments(department_id, manager_id)
+);
