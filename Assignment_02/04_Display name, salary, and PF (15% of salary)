@@ -1,0 +1,4 @@
+SELECT CONCAT(first_name, ' ', last_name) AS name,
+       salary,
+       salary * 0.15 AS PF
+FROM employees;
