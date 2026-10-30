@@ -1,0 +1,2 @@
+SELECT COUNT(DISTINCT job_id) AS number_of_jobs
+FROM employees;
