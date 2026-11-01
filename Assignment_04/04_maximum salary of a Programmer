@@ -1,0 +1,3 @@
+SELECT MAX(salary) AS maximum_programmer_salary
+FROM employees
+WHERE job_id = 'IT_PROG';
