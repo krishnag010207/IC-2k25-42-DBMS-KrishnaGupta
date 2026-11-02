@@ -1,0 +1,4 @@
+SELECT AVG(salary) AS average_salary,
+       COUNT(*) AS employee_count
+FROM employees
+WHERE department_id = 90;
