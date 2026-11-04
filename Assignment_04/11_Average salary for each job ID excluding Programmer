@@ -1,0 +1,5 @@
+SELECT job_id,
+       AVG(salary) AS average_salary
+FROM employees
+WHERE job_id <> 'IT_PROG'
+GROUP BY job_id;
