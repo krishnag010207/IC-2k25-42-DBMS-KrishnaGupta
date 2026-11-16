@@ -1,1 +1,0 @@
-# IC-2k25-42-DBMS-KrishnaGupta
