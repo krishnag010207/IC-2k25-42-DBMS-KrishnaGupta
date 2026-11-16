@@ -1,0 +1,9 @@
+SET @N = 5;
+
+SELECT DISTINCT salary
+FROM employees e1
+WHERE @N - 1 = (
+    SELECT COUNT(DISTINCT salary)
+    FROM employees e2
+    WHERE e2.salary > e1.salary
+);
