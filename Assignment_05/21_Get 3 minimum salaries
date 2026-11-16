@@ -1,0 +1,4 @@
+SELECT DISTINCT salary
+FROM employees
+ORDER BY salary ASC
+LIMIT 3;
