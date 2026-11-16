@@ -1,0 +1,3 @@
+SELECT *
+FROM employees
+WHERE MOD(employee_id, 2) = 0;
